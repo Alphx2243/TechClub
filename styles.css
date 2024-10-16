@@ -1,0 +1,138 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+.tech{
+    color:#ffbb00
+}
+
+header{
+    background-image: linear-gradient(rgba(0,8,51,0.4),rgba(0,8,51,0.4)),url("background.jpg");
+    background-position: center;
+    background-size: cover;
+
+    
+}
+
+.search_bar {
+    margin: 20px auto; 
+    width: 100%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    backdrop-filter: blur(2px) saturate(130%);
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
+
+
+
+.search_bar input{
+    background: transparent;
+    flex: 1;
+    border:0;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #cac7ff;
+}
+
+.search_bar button img{
+    width: 25px;
+}
+
+.search_bar button{
+    
+    border: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: #58629b;
+    cursor: pointer;
+}
+
+::placeholder{
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    z-index: 10;
+}
+
+.nav-link {
+    color: #dcdcdc !important;
+    
+}
+
+.nav-link {
+    color: white !important; 
+    transition: color 0.3s ease !important; 
+}
+
+.nav-link:hover {
+    color: #ffbb00 !important;
+}
+
+.btn{
+    background: white;
+    transition: color 0.3s ease;
+}
+
+.btn:hover{
+    background-color:#ff8000;
+}
+
+
+.main-section {
+    background-color: #222; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.display-4{
+    font-size: bold;
+}
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #ffbb00; 
+}
+
+.card {
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #222; 
+}
+
+footer p {
+    margin: 0;
+    color: white; 
+}
+
+
+.btn-warning {
+    background-color: #ffbb00;
+    border-color: #ffbb00; 
+}
+
+.btn-warning:hover {
+    background-color: #ffbb00;
+    border-color: #ffbb00; 
+}

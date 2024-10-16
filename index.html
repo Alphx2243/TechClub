@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Technical Council</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><span class="tech">Technical</span> Council</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item "><a class="nav-link " aria-current="page" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#mission">Mission</a></li>
+                    <li class="nav-item "><a class="nav-link" href="#team">Team</a></li>
+                    <li class="nav-item "><a class="nav-link" href="#events">Events</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="main-section text-center text-light py-5">
+        <div class="container-fluid">
+            <h1>Welcome to the Technical Council</h1>
+            <p class="lead">Innovating the future through collaboration.</p>
+            <a href="#mission" class="btn btn-warning btn-lg mt-3">Explore</a>
+            <form class="search_bar">
+                <input type="text" placeholder="Search ongoing projects" name="q">
+                <button type="submit"><img src="search.png"></button>
+            </form>
+        </div>
+    </header>
+
+    <section id="mission" class="py-5 bg-dark text-light text-center">
+        <div class="container">
+            <h2 class="section-title">Our Mission</h2>
+            <p>Our mission is to foster a collaborative environment where technology enthusiasts can innovate, learn, and lead projects that impact the future of technology.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, quisquam esse quia nobis quaerat adipisci, soluta, cum dolore perferendis veritatis itaque. Deserunt architecto facilis laboriosam cum aperiam perferendis molestias nam velit nihil alias odio sunt quam suscipit natus, quo esse modi obcaecati labore iure corrupti iusto fugit. Officiis, assumenda non? Explicabo ipsum sed, quos saepe dicta nam vel tempore cupiditate ullam voluptatem tenetur voluptas? Sit corrupti et deleniti, ab nam, eos architecto est ipsam natus veniam voluptatem rerum itaque asperiores debitis autem deserunt facilis eum accusamus provident fugit magni voluptates repudiandae? Minus vel molestias perferendis assumenda aperiam asperiores itaque fuga.</p>
+        </div>
+    </section>
+
+    <section id="team" class="py-5 text-center bg-dark">
+        <div class="container">
+            <h2 class="section-title text-light">Our Team</h2>
+            <div class="row mt-4">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card bg-dark text-light" data-bs-toggle="modal" data-bs-target="#teamMemberModal" data-name="Mmember 1" data-role="Head" data-image="char.jpg">
+                        <img src="char.jpg" class="card-img-top" alt="Team Member">
+                        <div class="card-body">
+                            <h4 class="card-title">Member 1</h4>
+                            <p class="card-text">Head</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card bg-dark text-light" data-bs-toggle="modal" data-bs-target="#teamMemberModal" data-name="Member 2" data-role="Technical Lead" data-image="char.jpg">
+                        <img src="char.jpg" class="card-img-top" alt="Team Member">
+                        <div class="card-body">
+                            <h4 class="card-title">Member 2</h4>
+                            <p class="card-text">Technical Lead</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card bg-dark text-light" data-bs-toggle="modal" data-bs-target="#teamMemberModal" data-name="Member 3" data-role="Technical Lead" data-image="char.jpg">
+                        <img src="char.jpg" class="card-img-top" alt="Team Member">
+                        <div class="card-body">
+                            <h4 class="card-title">Member 3</h4>
+                            <p class="card-text">Technical Lead</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="events" class="py-5 bg-dark text-light text-center">
+        <div class="container-fluid">
+            <h2 class="section-title">Upcoming Events</h2>
+            <ul class="list-unstyled mt-4">
+                <li class="py-2">Annual Tech Symposium - October 30, 2024</li>
+                <li class="py-2">Hackathon 2024 - November 12-13, 2024</li>
+                <li class="py-2">AI Workshop - December 15, 2024</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="text-center py-3 bg-dark text-light">
+        <p>&copy 2024 Technical Council. All Rights Reserved.</p>
+    </footer>
+
+    
+    <div class="modal fade" id="teamMemberModal" aria-labelledby="teamMemberModalLabel">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="teamMemberModalLabel">Team Member Details</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="modalImage" src="" alt="Team Member" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px;">
+                    <h4 id="modalName"></h4>
+                    <p id="modalRole"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
